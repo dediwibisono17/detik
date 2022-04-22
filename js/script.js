@@ -14,7 +14,7 @@ let text = document.getElementById("text");
 // console.log(1);
 window.addEventListener('scroll', function(){
     let value = this.window.scrollY;
-    console.log(value);
+    // console.log(value);
     text.style.top = 50 + value * -0.5 + '%';
     bird.style.bottom = value * 1.5 + 'px';
     bird.style.left = value * 1 + 'px';
@@ -25,5 +25,23 @@ window.addEventListener('scroll', function(){
 })
 
 $(()=>{
+})
+
+$.ajax({
+    url: 'js/data.json',
+    type: 'GET',
+    success: (response) =>{
+        $(".bg-top").append(`
+            <img src="${response.hero.img}" alt="Hero Bacground" title="Hero Background"/>
+        `)
+
+        // kronologi
+        $(".kronologi").text(response.kronologi.title);
+        var a
+        for (a=0; a<response.kronologi.text.length; a++) {
+            $(".kronologi-text").append(`<p>${response.kronologi.text[a]}</p>`)
+
+        }
+    }
 })
 
