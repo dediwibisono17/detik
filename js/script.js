@@ -28,7 +28,7 @@ $(()=>{
 })
 
 $.ajax({
-    url: '/js/data.json',
+    url: 'js/data.json',
     type: 'GET',
     success: (response) =>{
         $(".bg-top").append(`
