@@ -1,0 +1,455 @@
+$color-primary:#21409a;
+h1, h2, h3, .font-bold {
+    font-family: 'Roboto Slab', serif !important;
+}
+main {
+    overflow-x: hidden;
+    margin-bottom: 218px;
+    position: relative;
+    z-index: 9999;
+}
+p, main, body {
+    font-family: 'Merriweather', serif;
+}
+body {
+    margin: 0;
+}
+.bg {
+    &-silver {
+        background-color: darkseagreen;
+    }
+    &-light {
+        background-color: darkkhaki;
+    }
+    &-silver2 {
+        background: url('../img/bg-silver.png');
+    }
+    &-kertas {
+        background: url('../img/bg-kertas.png');
+        background-size: cover;
+    }
+}
+.text-center {
+    text-align: center;
+}
+.color{
+    &-red {
+        color: red;
+    }
+}
+.font {
+    &-small {
+        font-size: 12px;
+    }
+    &-medium {
+        font-size: 14px;
+    }
+    &-medium-large {
+        font-size: 16px;
+    }
+    &-large {
+        font-size: 21px;
+    }
+}
+section {
+    margin: 0;
+    min-height: 100vh;
+    padding: 16px 0;
+}
+
+.totop {
+    position: relative;
+    z-index: 99999;
+}
+
+.top {
+    background-color: chocolate;
+    position: relative;
+    .box {
+        padding: 16px;
+        background: rgba($color: #ffffff, $alpha: .4);
+        border-radius: 8px;
+    }
+    .old {
+        // left: 450px ;
+        // transform: translate(80%,-0);
+    }
+    .bird {
+        // bottom: 50% !important;
+        // width: 100px !important;
+        // height: initial !important;
+        // left: 100px;
+        // border: 1px solid;
+        // bottom: 5%;
+    }
+    .img {
+        position: absolute;
+        left: 0;
+        transform: translate(30%,-0);
+        z-index: 99;
+        bottom: 0%;
+        width: auto;
+        height: 480px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        color: rgb(8, 8, 151);
+        text-shadow: 0 3px 6px #999;
+    }
+    .bg-top {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        filter: blur(3px);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.number {
+    font-size: 5rem;
+    padding: 8px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    opacity: .3;
+    background-color: white;
+    text-align: center;
+    top: 32px;
+    position: absolute;
+    left: 124px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('img_parallax.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.part {
+    position: relative;
+    h2 {
+        position: relative;
+        z-index: 999;
+    }
+    .mobil {
+        left: 120px;
+    }
+    .kejar {
+        right: 120px;
+    }
+    p {
+        line-height: 36px;
+    }
+    .bottom {
+        width: 320px;
+        position: absolute;
+        bottom: 24px;
+        // width: 320px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .polisi {
+        width: 200px;
+        height: 200px;
+        background:radial-gradient(circle, #fff, #ccc);
+        border-radius: 50%;
+        box-shadow: 0 3px 6px #999;
+        margin: 0 16px 24px;
+        text-align: center;
+        display: inline-block;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+    .moto {
+        width: 420px;
+        margin: 0 auto;
+        background:radial-gradient(circle, #fff, #ccc);
+        padding: 16px 24px;
+        border-radius: 16px;
+        // box-shadow: 0 3px 6px #444;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .peta {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 16px;
+        box-shadow: 0 3px 6px #333;
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        padding: 8px 16px 16px;
+        text-align: center;
+        background-color: white;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .korban {
+        width: 100%;
+        // margin: 0 auto;
+        // box-shadow: 0 3px 6px #444;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .left-side {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        position: relative;
+        top: 24px;
+        .image {
+            width: 90%;
+            // height: 100%;
+            // border-radius: 16px;
+            // background-color: white;
+            // border: 8px solid;
+            // height: 320px;
+            img {
+                width: 100%;
+                box-shadow: 0 3px 6px #333;
+                border-radius: 16px;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .right-side {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+.block {
+    display: block;
+}
+
+.iblock {
+    display: inline-block;
+    width: 320px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 860px;
+    margin: 0 auto;
+    @media screen and(max-width: 766px) {
+        width: auto;
+        padding: 0 16px;
+    }
+}
+.detik-loading {
+    position: relative;
+    left: 45%;
+    top: 50%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.wrap-loading {
+    background: rgba(255,255,255,.7);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999
+}
+
+.wrap-loading .loading {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    background: 0 0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: 'Roboto Slab',serif!important;
+    font-size: 16px;
+    color: #21409a;
+    text-shadow: 0 0 10px #21409a;
+    z-index: 100
+}
+
+.wrap-loading .loading::after {
+    content: "Mohon Menunggu";
+    font-size: 12px;
+}
+
+.wrap-loading .loading::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #21409a;
+    border-right: 3px solid #21409a;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite
+}
+
+.wrap-loading span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: 0 0;
+    transform-origin: left;
+    animation: animate 2s linear infinite
+}
+
+.wrap-loading span::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #21409a;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #21409a
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg)
+    }
+
+    100% {
+        transform: rotate(405deg)
+    }
+}
+
+footer {
+    padding: 32px;
+    margin: 0;
+    border-top: 4px solid $color-primary;
+    // position: relative;
+    // background-color: #181818;
+    padding: 60px 0 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    .sosmed {
+        z-index: 10;
+        position: relative;
+        display: inline-block;
+    }
+    a {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+    .footer-help {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 4;
+        background: rgba($color: #000000, $alpha: .7);
+    }
+    .footer-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 3;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    h1,
+    h2,
+    p,
+    a {
+        position: relative;
+        z-index: 9;
+        color: white
+    }
+}
+
+.bg-test {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 127, 80, .3);
+}
