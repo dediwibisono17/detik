@@ -1,19 +1,28 @@
 $color-primary:#21409a;
-h1, h2, h3, .font-bold {
+h1,
+h2,
+h3,
+.font-bold {
     font-family: 'Roboto Slab', serif !important;
 }
+
 main {
     overflow-x: hidden;
     margin-bottom: 218px;
     position: relative;
     z-index: 9999;
 }
-p, main, body {
+
+p,
+main,
+body {
     font-family: 'Merriweather', serif;
 }
+
 body {
     margin: 0;
 }
+
 .bg {
     &-silver {
         background-color: darkseagreen;
@@ -29,14 +38,17 @@ body {
         background-size: cover;
     }
 }
+
 .text-center {
     text-align: center;
 }
-.color{
+
+.color {
     &-red {
         color: red;
     }
 }
+
 .font {
     &-small {
         font-size: 12px;
@@ -51,6 +63,7 @@ body {
         font-size: 21px;
     }
 }
+
 section {
     margin: 0;
     min-height: 100vh;
@@ -85,12 +98,12 @@ section {
     .img {
         position: absolute;
         left: 0;
-        transform: translate(30%,-0);
+        transform: translate(30%, -0);
         z-index: 99;
         bottom: 0%;
         width: auto;
         height: 480px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             transform: initial;
             bottom: -74px;
         }
@@ -143,24 +156,22 @@ h2 {
     top: 32px;
     position: absolute;
     left: 124px;
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         left: 16px;
         top: 0;
     }
 }
 
 .parallax {
-  /* The image used */
-  background-image: url('img_parallax.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .part {
@@ -193,7 +204,7 @@ h2 {
     .polisi {
         width: 200px;
         height: 200px;
-        background:radial-gradient(circle, #fff, #ccc);
+        background: radial-gradient(circle, #fff, #ccc);
         border-radius: 50%;
         box-shadow: 0 3px 6px #999;
         margin: 0 16px 24px;
@@ -209,11 +220,11 @@ h2 {
     .moto {
         width: 420px;
         margin: 0 auto;
-        background:radial-gradient(circle, #fff, #ccc);
+        background: radial-gradient(circle, #fff, #ccc);
         padding: 16px 24px;
         border-radius: 16px;
         // box-shadow: 0 3px 6px #444;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: auto;
         }
         img {
@@ -256,7 +267,7 @@ h2 {
         vertical-align: top;
         position: relative;
         top: 24px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 100%;
             display: block;
             margin-bottom: 24px;
@@ -280,7 +291,7 @@ h2 {
     .right-side {
         display: inline-block;
         width: 45%;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 100%;
             display: block;
         }
@@ -313,6 +324,7 @@ h2 {
         padding: 0 16px;
     }
 }
+
 .detik-loading {
     position: relative;
     left: 45%;
@@ -321,8 +333,9 @@ h2 {
     // display: block;
     text-align: center;
 }
+
 .wrap-loading {
-    background: rgba(255,255,255,.7);
+    background: rgba(255, 255, 255, .7);
     position: fixed;
     left: 0;
     right: 0;
@@ -336,14 +349,14 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
     background: 0 0;
     border-radius: 50%;
     text-align: center;
     line-height: 150px;
-    font-family: 'Roboto Slab',serif!important;
+    font-family: 'Roboto Slab', serif!important;
     font-size: 16px;
     color: #21409a;
     text-shadow: 0 0 10px #21409a;
@@ -397,7 +410,6 @@ h2 {
     0% {
         transform: rotate(0)
     }
-
     100% {
         transform: rotate(360deg)
     }
@@ -407,7 +419,6 @@ h2 {
     0% {
         transform: rotate(45deg)
     }
-
     100% {
         transform: rotate(405deg)
     }
@@ -477,18 +488,22 @@ footer {
     background: rgba(255, 127, 80, .3);
 }
 
-.object {
-    animation: MoveUpDown 1s linear infinite;
-    // position: absolute;
-    // left: 0;
-    // bottom: 0;
-  }
-  
-  @keyframes MoveUpDown {
-    0%, 100% {
-      transform: translateX(0);
+.pot {
+    // bottom: 15%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
     }
     50% {
-      transform: translateX(-100px);
+        left: calc(100% - 100px);
     }
-  }
+    100% {
+        left: 0;
+    }
+}
