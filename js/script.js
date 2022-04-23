@@ -60,5 +60,31 @@ $.ajax({
         //polisi tegaskan
         $(".tegaskan").text(`${response.tegaskan.title}`)
         $("t-1").text(response.tegaskan.text)
+
+        //korban
+        $(".korban3").text(`${response.korban.title}`);
+        $(".korban-img").append(`
+            <img src="${response.korban.img}" alt="">
+        `)
+        var b
+        for (b = 0; b < response.korban.text.length; b++) {
+            $(".korban-text").append(`<p class="font-large">${response.korban.text[b]}</p>`)
+
+        }
+
+        //nabrak
+        $(".nabrak").text(`${response.nabrak.title}`)
+        $(".nabrak-img").append(`
+            <img src="${response.nabrak.img}" alt="">
+        `)
+        $(".nabrak-p").text(`${response.nabrak.text}`)
+
+        //tewas
+        $(".tewas").text(`${response.tewas.title}`)
+        $(".tewas-p").append(`<p class="font-large">${response.tewas.text}</p>`)
+
+        //wanted
+        $(".wanted").text(`${response.wanted.title}`)
+        $(".wanted-p").append(`<p class="font-large">${response.wanted.text}</p>`)
     }
 })

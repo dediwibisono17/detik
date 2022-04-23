@@ -12,5 +12,24 @@
         "title": "Polisi Tegaskan Korban Bukan Maling",
         "img": ["img/aset/polisi.png", "img/aset/maling.png"],
         "text": "Kasat Reskrim Polres Metro Jakarta Timur AKBP Ahsanul Muqaffi menegaskan bahwa HM bukan seorang pencuri. HM disebut Ahsanul mengemudikan mobil dengan kencang sehingga dikejar oleh sekelompok orang."
+    },
+    "korban": {
+        "title": "Korban Tak Dengar Teriakan Massa",
+        "img": "img/aset/oldman.png",
+        "text": ["Ahsanul menyebut, korban tidak mendengar teriakan massa yang mengejarnya lantaran sudah lanjut usia (lansia). Hal tersebut didapat dari keterangan anak korban sewaktu dimintai keterangan oleh polisi.", "Bahkan, petugas kepolisian sempat ikut mengejar HM karena teriakan 'maling' oleh sekelompok orang tersebut."]
+    },
+    "nabrak": {
+        "title": "HM Sempat Menabrak Pemotor",
+        "img": "img/aset/motocrash.png",
+        "text": "Ahsanul berkata, HM dikejar oleh sekelompok orang itu dari wilayah Tebet, Jakarta Selatan, hingga ke Pulogadung, Jakarta Timur. Dirinya menyebut, HM sempat menabrak pemotor sebelum akhirnya dikeroyok massa."
+    },
+    "tewas": {
+        "title": "Korban Tewas Di TKP",
+        "text": "Aksi pengejaran HM itu berakhir di kawasan Pulogadung, Cakung, Jakarta Timur. Korban yang tidak berdaya itu akhirnya menjadi sasaran amuk massa yang marah. Akibatnya, HM meninggal di lokasi kejadian."
+    },
+    "wanted": {
+        "title": "Polisi Buru Pelaku Pengeroyok HM",
+        "text": "Kasus yang menimpa HM itu kini sedang diselidiki aparat kepolisian. Para pelaku pengeroyok HM dalam pengejaran polisi."
     }
+
 }
