@@ -1,10 +1,16 @@
 {
     "hero": {
-        "img":"img/bg-top.jpg"
+        "img": ["img/bg-top.jpg", "img/aset/bird.png", "img/aset/old.png", "img/aset/org.png"],
+        "title": "Nasib Malang Lansia Diteriaki Maling Hingga Tewas Diamuk Massa"
     },
     "kronologi": {
-        "title" : "Kronologi",
-        "text" : ["Ihwalnya, mobil yang dikendarai HM itu dikejar oleh sekelompok orang. Aksi pengejaran itu pun beredar luas di media sosial dengan bernarasikan bahwa HM telah melakukan pencurian", "Dalam video tersebut, terdengar suara pria yang meneriaki HM sebagai maling. Teriakan itu ternyata mengundang amarah massa lainnya."],
-        "img" : "img/aset/mobil.gif"
+        "title": "Kronologi",
+        "text": ["Ihwalnya, mobil yang dikendarai HM itu dikejar oleh sekelompok orang. Aksi pengejaran itu pun beredar luas di media sosial dengan bernarasikan bahwa HM telah melakukan pencurian", "Dalam video tersebut, terdengar suara pria yang meneriaki HM sebagai maling. Teriakan itu ternyata mengundang amarah massa lainnya."],
+        "img": ["img/aset/mobil.gif", "img/aset/kejar.png"]
+    },
+    "tegaskan": {
+        "title": "Polisi Tegaskan Korban Bukan Maling",
+        "img": ["img/aset/polisi.png", "img/aset/maling.png"],
+        "text": "Kasat Reskrim Polres Metro Jakarta Timur AKBP Ahsanul Muqaffi menegaskan bahwa HM bukan seorang pencuri. HM disebut Ahsanul mengemudikan mobil dengan kencang sehingga dikejar oleh sekelompok orang."
     }
 }
